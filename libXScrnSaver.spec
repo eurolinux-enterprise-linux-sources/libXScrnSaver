@@ -1,7 +1,7 @@
 Summary: X.Org X11 libXss runtime library
 Name: libXScrnSaver
 Version: 1.2.2
-Release: 5%{?dist}
+Release: 6.1%{?dist}
 License: MIT
 Group: System Environment/Libraries
 URL: http://www.x.org
@@ -57,6 +57,12 @@ find $RPM_BUILD_ROOT -name '*.la' -exec rm -f {} ';'
 %{_includedir}/X11/extensions/scrnsaver.h
 
 %changelog
+* Wed Feb 12 2014 Adam Jackson <ajax@redhat.com> 1.2.2-6.1
+- Mass rebuild
+
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 1.2.2-6
+- Mass rebuild 2013-12-27
+
 * Thu Mar 07 2013 Peter Hutterer <peter.hutterer@redhat.com> - 1.2.2-5
 - autoreconf needs xorg-x11-util-macros
 
